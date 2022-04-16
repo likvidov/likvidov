@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: Arial, sans-serif;
 }
@@ -18,6 +22,7 @@ nav{
     width: 100%;
     height: 60px;
     background-color: #344051;
+    position: fixed;
 }
 
 h4 {
@@ -26,10 +31,11 @@ h4 {
 
 .logo{
     color: #fff;
-    font-style: 28px;
+    font-size: 18px;
     line-height: 60px;
     padding-left: 388px;
     float: left;
+    animation: comming 2.8s ease;
 }
 
 .menu{
@@ -42,13 +48,71 @@ h4 {
     line-height: 60px;
     color: #fff;
     margin-right: 40px;
-    font-style: 16px;
+    font-size: 14px;
     text-transform: uppercase;
+    animation: topshift 0.2s ease forwards;
+    opacity: 0;
+}
+
+.menu li a{
+    transition: all 0.2s;
+    color: #fff;
+    transform: scale(1);
+    display: inline-block;
+}
+
+.menu li a:visited{
+    color: #fff;
+}
+
+.menu li a:hover{
+    color: #d17700;
+}
+
+.menu li a:active{
+    transform: scale(1.1);
+}
+
+.menu li:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.menu li:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.menu li:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+.menu li:nth-child(5) {
+    animation-delay: 1.0s;
+}
+
+.menu li:nth-child(6) {
+    animation-delay: 1.2s;
+}
+
+.menu li:nth-child(7) {
+    animation-delay: 1.4s;
+}
+
+.menu li:nth-child(8) {
+    animation-delay: 1.6s;
+}
+
+.menu li:nth-child(9) {
+    animation-delay: 1.8s;
+}
+
+main{
+    width: 100%;
+    height: 100%;
 }
 
 .main{
     width: 100%;
-    height: calc(100% - 60px);
+    height: 100%;
     background: url(../img/boy.png) 90% 100%/auto 85% no-repeat, url(../img/bg.jpg) center/cover no-repeat; 
 }
 
@@ -57,6 +121,8 @@ h4 {
     margin: 432px 0px 0px 404px;
     color: #2c384a;
     text-align: center;
+    animation: titlemove 1s ease forwards;
+    animation-delay: 2.4ms;
 }
 
 .title__container h1{
@@ -68,6 +134,20 @@ h4 {
     margin-top: 40px;
     font-size: 22px;
     color: #79818c;
+}
+
+.title__container input, .about input{
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.title__container input:hover, .about input:hover{
+    background: #344051;
+    color: #fff;
+}
+
+.title__container input:active, .about input:active{
+    transform: scale(1.1);
 }
 
 h3{
@@ -121,6 +201,7 @@ h3::after {
 .knows {
     background: url(../img/bgknow.jpg);
     height: 520px;
+    background-attachment: fixed;
 }
 
 .knows ul{
@@ -210,6 +291,14 @@ h3::after {
     font-weight: bold;
 }
 
+.cases .items .item_description input:hover{
+    background:#d17700;
+}
+
+.cases .items .item_description input:active{
+    transform: scale(1.1);
+}
+
 .costs {
     width: 100%;
     padding-bottom: 150px;
@@ -233,6 +322,12 @@ h3::after {
     width: 100%;
     color: #737373;
     margin-bottom: 45px;
+    border-radius: 5px;
+}
+
+.costs form .form__item select:hover{
+    background:#d17700;
+    color: #fff;
 }
 
 .costs form p{
@@ -248,6 +343,7 @@ h3::after {
 .statistics {
     height: 500px;
     background: url(../img/bgstat.jpg);
+    background-attachment: fixed;
 }
 
 .statistics ul{
@@ -255,9 +351,14 @@ h3::after {
     text-align: center;
 }
 
-.statistics ul li {
+.statistics ul li, .knows ul li {
     display: inline-block;
     width: 250px;
+    transition: all 0.3s ease;
+}
+
+.statistics ul li:hover, .knows ul li:hover  {
+    transform: scale(1.3);    
 }
 
 .statistics ul li .img{
@@ -301,6 +402,11 @@ h3::after {
     margin-left: auto;
     margin-right: auto;
     background: url(../img/gen.png) no-repeat 50%;
+    transition: all 0.5s ease;
+}
+
+.feedback .img:hover    {
+    transform: scale(1.3);    
 }
 
 .feedback .description{
@@ -325,6 +431,7 @@ h3::after {
     background: url(../img/bgcontacts.jpg);
     height: 800px;
     color: #fff;
+    background-attachment: fixed;
 }
 
 .contacts h3{
@@ -410,4 +517,38 @@ footer h5{
     color: #fff;
     text-align: center;
     line-height: 95px;
+}
+
+@keyframes comming {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes topshift {
+    from{
+        opacity: 0;
+        margin-top: -80px;
+    }
+
+    to{
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+@keyframes titlemove {
+    from{
+        opacity: 0;
+        margin-left: -500px; 
+    }
+
+    to{
+        opacity: 1;
+        margin-top: 404px;
+    }
 }
