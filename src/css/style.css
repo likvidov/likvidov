@@ -141,7 +141,7 @@ main{
     transform: scale(1);
 }
 
-.title__container input:hover, .about input:hover{
+.title__container input:hover, .about input:hover, .contacts .form .send input:hover{
     background: #344051;
     color: #fff;
 }
