@@ -7,201 +7,251 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Андрей Браун - Веб-разработчик</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="logo">Андрей Браун</div>
-            <div class="menu">
-                <ul>
-                    <li><a href="#main">Главная</a></li>
-                    <li><a href="#about">Обо мне</a></li>
-                    <li><a href="#knows">Услуги</a></li>
-                    <li><a href="#cases">Кейсы</a></li>
-                    <li><a href="#costs">Прайс</a></li>
-                    <li><a href="#statistics">Статистика</a></li>
-                    <li><a href="#feedback">Отзывы</a></li>
-                    <li><a href="#contacts">Контакты</a></li>
-                    <li><a href="#maps">Карта</a></li>
-                </ul>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-2 col-lg-3 col-7">
+                        <div class="logo">Андрей Браун</div>
+                    </div>
+
+                    <div class="col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">
+                        <div class="menu">
+                            <ul>
+                                <li class="d-none"><a href="#main">Главная</a></li>
+                                <li><a href="#about">Обо мне</a></li>
+                                <li><a href="#knows">Услуги</a></li>
+                                <li><a href="#cases">Кейсы</a></li>
+                                <li><a href="#costs">Прайс</a></li>
+                                <li class="d-none"><a href="#statistics">Статистика</a></li>
+                                <li><a href="#feedback">Отзывы</a></li>
+                                <li><a href="#contacts">Контакты</a></li>
+                                <li class="d-none"><a href="#maps">Карта</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
+                        <div class="dropdown">
+                            <button class="btn btn-outline-secondary dropdown-toggle white-btn" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Меню
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#about">Обо мне</a></li>
+                                <li><a class="dropdown-item" href="#knows">Услуги</a></li>
+                                <li><a class="dropdown-item" href="#cases">Кейсы</a></li>
+                                <li><a class="dropdown-item" href="#costs">Прайс</a></li>
+                                <li><a class="dropdown-item" href="#feedback">Отзывы</a></li>
+                                <li><a class="dropdown-item" href="#contacts">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>  
             </div>
         </nav>
     </header>
 
     <section class="main" id="main">
-        <div class="title__container">
-            <h1>Привет <br> Я Андрей Браун</h1>
-            <h4>Фулл стек веб-разработчик</h4>
-            <input type="button" value="Обо мне">
-            <input type="button" value="Мои работы">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-6 mt-5 pt-5">
+                    <div class="title__container mt-5">
+                        <h1>Привет <br> Я Андрей Браун</h1>
+                        <h4>Фулл стек веб-разработчик</h4>
+                        <input type="button" value="Обо мне">
+                        <input type="button" value="Мои работы">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="about" id="about">
-        <h3>ОБО МНЕ</h3>
-        <div class="photo"></div>
-        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare
-            diam. Sed commodo nibh ante
-            facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.
-        </p>
-        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare
-            diam. Sed commodo nibh ante
-            facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.
-        </p>
-        <input type="button" value="Скачать резюме">
+        <div class="container">
+            <h3>ОБО МНЕ</h3>
+            <div class="row col-6 offset-3 col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+                <div class="photo"></div>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare
+                    diam. Sed commodo nibh ante
+                    facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.
+                </p>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare
+                    diam. Sed commodo nibh ante
+                    facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.
+                </p>
+                <input type="button" value="Скачать резюме">
+            </div>            
+        </div>        
     </section>
 
     <section class="knows" id="knows">
-        <h3>ЧТО Я УМЕЮ</h3>
-        <ul>
-            <li class="first">
-                <div class="img"></div>
-                <div class="title">Веб-дизайн</div>
-                <div class="description">Lorem ipsum dolor sit amet placerat
-                    facilisis felis mi in tempus eleifend
-                    pellentesque natoque etiam. </div>
-            </li>
-            <li class="second">
-                <div class="img"></div>
-                <div class="title">Разработка</div>
-                <div class="description">Lorem ipsum dolor sit amet placerat
-                    facilisis felis mi in tempus eleifend
-                    pellentesque natoque etiam. </div>
-            </li>
-            <li class="third">
-                <div class="img"></div>
-                <div class="title">СЕО-Оптимизация</div>
-                <div class="description">Lorem ipsum dolor sit amet placerat
-                    facilisis felis mi in tempus eleifend
-                    pellentesque natoque etiam. </div>
-            </li>
-            <li class="four">
-                <div class="img"></div>
-                <div class="title">Маркетинг</div>
-                <div class="description">Lorem ipsum dolor sit amet placerat
-                    facilisis felis mi in tempus eleifend
-                    pellentesque natoque etiam. </div>
-            </li>
-        </ul>
+        <div class="container">
+            <h3>ЧТО Я УМЕЮ</h3>
+            <ul>
+                <li class="first">
+                    <div class="img"></div>
+                    <div class="title">Веб-дизайн</div>
+                    <div class="description">Lorem ipsum dolor sit amet placerat
+                        facilisis felis mi in tempus eleifend
+                        pellentesque natoque etiam. </div>
+                </li>
+                <li class="second">
+                    <div class="img"></div>
+                    <div class="title">Разработка</div>
+                    <div class="description">Lorem ipsum dolor sit amet placerat
+                        facilisis felis mi in tempus eleifend
+                        pellentesque natoque etiam. </div>
+                </li>
+                <li class="third">
+                    <div class="img"></div>
+                    <div class="title">СЕО-Оптимизация</div>
+                    <div class="description">Lorem ipsum dolor sit amet placerat
+                        facilisis felis mi in tempus eleifend
+                        pellentesque natoque etiam. </div>
+                </li>
+                <li class="four">
+                    <div class="img"></div>
+                    <div class="title">Маркетинг</div>
+                    <div class="description">Lorem ipsum dolor sit amet placerat
+                        facilisis felis mi in tempus eleifend
+                        pellentesque natoque etiam. </div>
+                </li>
+            </ul>
+        </div>
     </section>
 
     <section class="cases" id="cases">
-        <h3>КЕЙСЫ</h3>
-        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed Dapibus leo nec ornare diamcoccodo nibh
-            ante facilisis.</h4>
-
-        <div class="items">
-            <div class="img"></div>
-            <div class="item_description">
-                <div class="item__title">CLIENT: <span>Какая-то компания</span></div>
-                <div class="item_website">WEBSITE: <span>http://www.somedomain.com</span></div>
+        <div class="container">
+            <h3>КЕЙСЫ</h3>
+            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed Dapibus leo nec ornare diamcoccodo nibh
+                ante facilisis.</h4>
+    
+            <div class="items">
+                <div class="img"></div>
+                <div class="item">
+                    <div class="item_description">
+                        <div class="item__title">CLIENT: <span>Какая-то компания</span></div>
+                        <div class="item_website">WEBSITE: <span>http://www.somedomain.com</span></div>
+                    </div>
+                    <div class="item__projectname">Название проекта <br> <span>Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit., sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur.</span></div>
+                </div>           
                 <input type="button" class="live" value="VISIT LIVE SITE">
             </div>
-            <div class="item__projectname">Название проекта <br> <span>Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit., sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur.</span></div>
         </div>
     </section>
 
     <section class="costs" id="costs">
-        <h3>Расчет стоимости</h3>
-
-        <form action="" class="">
-            <div class="form__item">
-                <div class="item__title">ТИП САЙТА</div>
-                <select name="select" size="1">
-                    <option selected value="s1">Выберите пункт</option>
-                </select>
-            </div>
-            <div class="form__item">
-                <div class="item__title">ДИЗАЙН</div>
-                <select name="select" size="1">
-                    <option selected value="s1">Выберите пункт</option>
-                </select>
-            </div>
-            <div class="form__item">
-                <div class="item__title">АДАПТИВНОСТЬ</div>
-                <select name="select" size="1">
-                    <option selected value="s1">Выберите пункт</option>
-                </select>
-            </div>
-            <p>Сроки <span>0</span></p>
-            <p>Стоимость <span>0</span></p>
-        </form>
+        <div class="container">
+            <h3>Расчет стоимости</h3>
+            <form action="" class="">
+                <div class="form__item">
+                    <div class="item__title">ТИП САЙТА</div>
+                    <select name="select" size="1">
+                        <option selected value="s1">Выберите пункт</option>
+                    </select>
+                </div>
+                <div class="form__item">
+                    <div class="item__title">ДИЗАЙН</div>
+                    <select name="select" size="1">
+                        <option selected value="s1">Выберите пункт</option>
+                    </select>
+                </div>
+                <div class="form__item">
+                    <div class="item__title">АДАПТИВНОСТЬ</div>
+                    <select name="select" size="1">
+                        <option selected value="s1">Выберите пункт</option>
+                    </select>
+                </div>
+                <p>Сроки <span>0</span></p>
+                <p>Стоимость <span>0</span></p>
+            </form>
+        </div>
     </section>
 
     <section class="statistics" id="statistics">
-        <h3>НЕМНОГО СТАТИСТИКИ</h3>
-        <ul>
-            <li class="first">
-                <div class="img"></div>
-                <div class="count">120</div>
-                <div class="title">СЧАСТЛИВЫХ КЛИЕНТОВ</div>
-            </li>
-            <li class="second">
-                <div class="img"></div>
-                <div class="count">4600</div>
-                <div class="title">ЧАСОВ РАБОТЫ</div>
-            </li>
-            <li class="third">
-                <div class="img"></div>
-                <div class="count">340</div>
-                <div class="title">ПРОЕКТОВ ЗАВЕРШЕНО</div>
-            </li>
-            <li class="four">
-                <div class="img"></div>
-                <div class="count">23</div>
-                <div class="title">НАГРАД ПОЛУЧЕНО</div>
-            </li>
-        </ul>
+        <div class="container">
+            <h3>НЕМНОГО СТАТИСТИКИ</h3>
+            <ul>
+                <li class="first">
+                    <div class="img"></div>
+                    <div class="count">120</div>
+                    <div class="title">СЧАСТЛИВЫХ КЛИЕНТОВ</div>
+                </li>
+                <li class="second">
+                    <div class="img"></div>
+                    <div class="count">4600</div>
+                    <div class="title">ЧАСОВ РАБОТЫ</div>
+                </li>
+                <li class="third">
+                    <div class="img"></div>
+                    <div class="count">340</div>
+                    <div class="title">ПРОЕКТОВ ЗАВЕРШЕНО</div>
+                </li>
+                <li class="four">
+                    <div class="img"></div>
+                    <div class="count">23</div>
+                    <div class="title">НАГРАД ПОЛУЧЕНО</div>
+                </li>
+            </ul>
+        </div>
     </section>
 
     <section class="feedback" id="feedback">
-        <h3>ОТЗЫВЫ</h3>
-        <ul>
-            <li>
-                <div class="img"></div>
-                <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo
-                    nec ornare diam. Sed commodo nibh ante
-                    facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.</div>
-                <div class="title"><span>Михаил</span>, Ген директор ПАО “Газпром”.</div>
-            </li>
-        </ul>
+        <div class="container">
+            <h3>ОТЗЫВЫ</h3>
+            <ul>
+                <li>
+                    <div class="img"></div>
+                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo
+                        nec ornare diam. Sed commodo nibh ante
+                        facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.</div>
+                    <div class="title"><span>Михаил</span>, Ген директор ПАО “Газпром”.</div>
+                </li>
+            </ul>
+        </div>        
     </section>
 
     <section class="contacts" id="contacts">
-        <h3>МОИ КОНТАКТЫ</h3>
-        <h4 class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leo nec ornare
-            diamcoccodo </h4>
-        <ul>
-            <li class="first">
-                <div class="img"></div>
-                <div class="title">Санкт-Петербург<br>Невский проспект 11</div>
-            </li>
-            <li class="second">
-                <div class="img"></div>
-                <div class="title">info@companyname.com</div>
-            </li>
-            <li class="third">
-                <div class="img"></div>
-                <div class="title">+7 999 999-99-99</div>
-            </li>
-        </ul>
-
-        <h4>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h4>
-        <form class="form">
-            <p>
-                <input placeholder="Имя" name="user">
-                <input placeholder="Email" name="email">
-            </p>
-            <p><textarea placeholder="СООБЩЕНИЕ" name="user"></textarea></p>
-            <p class="send"><input type="submit" value="Отправить" formaction="" formmethod="post"></p>
-        </form>
+        <div class="container">
+            <h3>МОИ КОНТАКТЫ</h3>
+            <h4 class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leo nec ornare
+                diamcoccodo </h4>
+            <ul>
+                <li class="first">
+                    <div class="img"></div>
+                    <div class="title">Санкт-Петербург<br>Невский проспект 11</div>
+                </li>
+                <li class="second">
+                    <div class="img"></div>
+                    <div class="title">info@companyname.com</div>
+                </li>
+                <li class="third">
+                    <div class="img"></div>
+                    <div class="title">+7 999 999-99-99</div>
+                </li>
+            </ul>
+    
+            <h4>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h4>
+            <form class="form">
+                <p>
+                    <input placeholder="Имя" name="user">
+                    <input placeholder="Email" name="email">
+                </p>
+                <p><textarea placeholder="СООБЩЕНИЕ" name="user"></textarea></p>
+                <input class="send" type="submit" value="Отправить" formaction="" formmethod="post">
+            </form>
+        </div>
     </section>
 
     <section class="maps" id="maps">
@@ -212,8 +262,12 @@
     </section>
 
     <footer>
-        <h5>Copyright © 2021 Андрей Браун. Design by Web</h5>
+        <div class="container">
+            <h5>Copyright © 2021 Андрей Браун. Design by Web</h5>
+        </div>
     </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

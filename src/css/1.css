@@ -1,210 +1,43 @@
-html {
-    scroll-behavior: smooth;
-}
-
-body{
-    font-family: Arial, sans-serif;
-}
-
-input {
-    height: 40px;
-    text-align: center;
-    border: 2px solid #79818c;
-    background: none;
-    border-radius: 5px;
-    color: #79818c;
-    font-size: 13px;
-    padding: 0px 15px;
-    margin: 58px 14px 0px 14px;
-}
-
-nav{
-    width: 100%;
-    height: 60px;
-    background-color: #344051;
-    /* position: fixed;  */
-    z-index: 1000;
-}
-
-h4 {
-    text-align: center;
-}
-
-.logo{
-    color: #fff;
-    font-size: 18px;
-    line-height: 60px;
-    float: left;
-    animation: comming 2.8s ease;
-}
-
-.menu{
-    float: left;
-}
-
-.menu li{
-    float: left;
-    line-height: 60px;
-    color: #fff;
-    margin-right: 40px;
-    font-size: 14px;
-    text-transform: uppercase;
-    animation: topshift 0.2s ease forwards;
-    opacity: 0;
-}
-
-.menu li a{
-    transition: all 0.2s;
-    color: #fff;
-    transform: scale(1);
-    display: inline-block;
-    text-decoration: none;
-}
-
-.menu li a:visited{
-    color: #fff;
-}
-
-.menu li a:hover{
-    color: #d17700;
-}
-
-.menu li a:active{
-    transform: scale(1.1);
-}
-
-.menu li:nth-child(2) {
-    animation-delay: 0.4s;
-}
-
-.menu li:nth-child(3) {
-    animation-delay: 0.6s;
-}
-
-.menu li:nth-child(4) {
-    animation-delay: 0.8s;
-}
-
-.menu li:nth-child(5) {
-    animation-delay: 1.0s;
-}
-
-.menu li:nth-child(6) {
-    animation-delay: 1.2s;
-}
-
-.menu li:nth-child(7) {
-    animation-delay: 1.4s;
-}
-
-.menu li:nth-child(8) {
-    animation-delay: 1.6s;
-}
-
-.menu li:nth-child(9) {
-    animation-delay: 1.8s;
-}
-
-main{
-    width: 100%;
-    height: 100%;
-}
-
-.main{
-    width: 100%;
-    height: 100%;
-    background: url(../img/boy.png) 90% 100%/auto 85% no-repeat, url(../img/bg.jpg) center/cover no-repeat; 
-}
-
-.title__container{
-    float: left;
-    color: #2c384a;
-    text-align: center;
-    width: 100%;
-    animation: titlemove 1s ease forwards;
-    animation-delay: 2.4ms;
-}
-
-.title__container h1{
-    font-family: Arial, sans-serif;
-    font-size: 72px;
-    font-weight: 600;
-}
-
-.title__container h4{
-    margin-top: 40px;
-    font-size: 22px;
-    color: #79818c;
-}
-
-.title__container input, .about input{
-    transition: all 0.2s;
-    transform: scale(1);
-}
-
-.title__container input:hover, .about input:hover, .contacts .form .send input:hover{
-    background: #344051;
-    color: #fff;
-}
-
-.title__container input:active, .about input:active{
-    transform: scale(1.1);
-}
-
-h3{
-    display: inline-block;
-    color: #263244;
-    width: 100%;
-    text-transform: uppercase;
-    margin-top: 100px;
-    text-align: center;
-    font-size: 22px;
-    padding-bottom: 30px;
-    font-weight: bold;
-}
-
-h3::after {
-    content: "";
-    display: block;
-    width: 70px;
-    padding-top: 30px; 
-    margin-left: auto;
-    margin-right: auto;
-    border-bottom: 3px solid #d17700;
-}
-
 .about{
     margin-bottom: 100px;
 }
 
 .about .photo{
+    width: 200px;
     height: 200px;
     margin-left: auto;
     margin-right: auto;
-    background: url(../img/photo.jpg) no-repeat center;
+    background: url(../img/photo.jpg);
     margin-bottom: 25px;
 }
 
 .about .description{
+    width: 735px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 40px;
 }
 
 .about input {
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    flex-basis: 150px;
 }
 
 .knows {
     background: url(../img/bgknow.jpg);
+    height: 520px;
     background-attachment: fixed;
 }
 
 .knows ul{
-    display: flex;
     margin-top: 80px;
     text-align: center;
-    padding-bottom: 40px;
+}
+
+.knows ul li {
+    display: inline-block;
+    width: 250px;
 }
 
 .knows ul li .img{
@@ -236,11 +69,10 @@ h3::after {
 
 .cases{
     width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     color: #354051;
-}
-
-.cases .item {
-    display: flex;
 }
 
 .cases .items .img {
@@ -256,6 +88,8 @@ h3::after {
 }
 
 .cases .items .item_description{
+    float: left;
+    padding-left: 385px;
     text-align: left;
     font-weight: bold;
     margin-top: 5px;
@@ -276,21 +110,18 @@ h3::after {
 }
 
 .cases .items .item__projectname{
+    float: left;
+    width: 850px;
     text-align: left;
     padding-left: 85px;
     font-weight: bold;
 }
 
-.cases .items input{
-    margin: 0;
-    margin-top: 20px;
-}
-
-.cases .items input:hover{
+.cases .items .item_description input:hover{
     background:#d17700;
 }
 
-.cases .items input:active{
+.cases .items .item_description input:active{
     transform: scale(1.1);
 }
 
@@ -300,6 +131,7 @@ h3::after {
 }
 
 .costs form {
+    /* width: 890px; */
     margin-left: auto;
     margin-right: auto;
 }
@@ -335,18 +167,19 @@ h3::after {
 }
 
 .statistics {
+    height: 500px;
     background: url(../img/bgstat.jpg);
     background-attachment: fixed;
 }
 
-.statistics ul{    
-    display: flex;
-    justify-content: space-around;
+.statistics ul{
     margin-top: 80px;
     text-align: center;
 }
 
 .statistics ul li, .knows ul li {
+    display: inline-block;
+    width: 250px;
     transition: all 0.3s ease;
 }
 
@@ -403,6 +236,7 @@ h3::after {
 }
 
 .feedback .description{
+    width: 735px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
@@ -421,6 +255,7 @@ h3::after {
 
 .contacts{
     background: url(../img/bgcontacts.jpg);
+    height: 800px;
     color: #fff;
 }
 
@@ -433,7 +268,7 @@ h3::after {
 }
 
 .contacts ul{
-    margin-top: 50px;
+    margin-top: 80px;
     text-align: center;
     margin-bottom: 40px;
 }
@@ -465,14 +300,8 @@ h3::after {
     text-align: center;
 }
 
-.contacts .form p {
-    display: flex;
-    justify-content: center;    
-    flex-wrap: wrap;
-}
-
 .contacts .form p input {
-    flex-basis: 350px;
+    width: 350px;
     background-color: #d2d5db;
     border: none;
     border-radius: 0;
@@ -481,19 +310,18 @@ h3::after {
 }
 
 .contacts .form p textarea {
+    width: 730px;
     resize: none;
-    height: 95px;    
-    flex-basis: 730px;
+    height: 95px;
     background-color: #d2d5db;
     padding-top: 10px;
     padding-left: 10px;
 }
 
-.contacts .form .send {
+.contacts .form .send input {
     width: 120px;
     background-color: rgba(0, 0, 0, 0);
-    margin-top: 100px;
-    margin-bottom: 10px;
+    margin-top: 30px;
     color: #fff;
     border: #fff 1px solid;
     text-align: center;
@@ -514,105 +342,4 @@ footer h5{
     color: #fff;
     text-align: center;
     line-height: 95px;
-}
-
-@keyframes comming {
-    from{
-        opacity: 0;
-    }
-
-    to{
-        opacity: 1;
-    }
-}
-
-@keyframes topshift {
-    from{
-        opacity: 0;
-        margin-top: -80px;
-    }
-
-    to{
-        opacity: 1;
-        margin-top: 0px;
-    }
-}
-
-@keyframes titlemove {
-    from{
-        opacity: 0;
-        margin-left: -500px; 
-    }
-
-    to{
-        opacity: 1;
-        margin-top: 0px;
-    }
-}
-
-.white-btn{
-    color: white;
-}
-
-@media (max-width: 991px){
-    h3 {
-        margin-top: 30px;
-    }
-    input {
-        margin: 0;
-    }
-
-    .title__container, .title__container h4, .title__container input{
-        color: #fff;
-        position: relative;
-        z-index: 3;
-    }
-
-    .title__container input{
-        border: 2px solid #fff;
-    }
-
-    .main{
-        position: relative;
-    }
-
-    .main::after{
-        content: "";
-        bottom: 0;
-        top: 0;
-        left: 0;
-        right: 0;
-        position: absolute;
-        background: rgba(0, 0, 0, 0.4);
-    }
-
-    .knows ul{
-        margin-top: 0;
-    }
-
-    .contacts .form p textarea {
-        flex-basis: 350px;
-    }
-}
-
-@media (max-width: 766px) {
-    .knows ul{
-        flex-direction: column;
-    }
-    
-    .knows ul li .img{
-        margin-bottom: 0;
-    }
-
-    .cases .item {
-        flex-direction: column;
-    }
-
-    .cases .items .item__projectname {
-        padding-left: 0px;
-    }
-
-    .statistics ul {
-        flex-direction: column;
-    }
 }
