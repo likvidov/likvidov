@@ -196,7 +196,7 @@ h3::after {
 }
 
 .knows {
-    background: url(../img/bgknow.jpg);
+    background: url(../img/bgknow.jpg) ;
     background-attachment: fixed;
 }
 
@@ -215,17 +215,17 @@ h3::after {
 }
 
 .knows ul li.first .img{
-    background: url(../img/1.png) no-repeat;
+    background: url(../img/1.png) no-repeat center;
 }
 
 .knows ul li.second .img{
-    background: url(../img/2.png) no-repeat;
+    background: url(../img/2.png) no-repeat center;
 }
 .knows ul li.third .img{
-    background: url(../img/3.png) no-repeat;
+    background: url(../img/3.png) no-repeat center;
 }
 .knows ul li.four .img{
-    background: url(../img/4.png) no-repeat;
+    background: url(../img/4.png) no-repeat center;
 }
 
 .knows ul li .title{
@@ -243,12 +243,10 @@ h3::after {
     display: flex;
 }
 
-.cases .items .img {
-    background: url(../img/project1.jpg) no-repeat center;
+.cases .img {
     margin-top: 40px;
     margin-bottom: 40px;
-    height: 600px;
-    text-align: center;
+    width: 100%;
 }
 
 .cases .items .item_website{
@@ -362,17 +360,17 @@ h3::after {
 }
 
 .statistics ul li.first .img{
-    background: url(../img/5.png) no-repeat;
+    background: url(../img/5.png) no-repeat center;
 }
 
 .statistics ul li.second .img{
-    background: url(../img/6.png) no-repeat;
+    background: url(../img/6.png) no-repeat center;
 }
 .statistics ul li.third .img{
-    background: url(../img/7.png) no-repeat;
+    background: url(../img/7.png) no-repeat center;
 }
 .statistics ul li.four .img{
-    background: url(../img/8.png) no-repeat;
+    background: url(../img/8.png) no-repeat center;
 }
 .statistics ul li .count,
 .statistics ul li .title{
@@ -596,8 +594,13 @@ footer h5{
 }
 
 @media (max-width: 766px) {
-    .knows ul{
+    .knows ul, .statistics ul{
         flex-direction: column;
+        padding: 0;
+    }
+
+    .knows ul li, .statistics ul li {
+        margin-bottom: 30px;
     }
     
     .knows ul li .img{
@@ -610,9 +613,5 @@ footer h5{
 
     .cases .items .item__projectname {
         padding-left: 0px;
-    }
-
-    .statistics ul {
-        flex-direction: column;
     }
 }
