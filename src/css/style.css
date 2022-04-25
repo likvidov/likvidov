@@ -418,7 +418,7 @@ h3::after {
 }
 
 .contacts{
-    background: url(../img/bgcontacts.jpg);
+    background: url(../img/bgcontacts.jpg) center;
     color: #fff;
 }
 
