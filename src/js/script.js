@@ -32,7 +32,7 @@ function priceCalculation(elem, elem1, elem2){
         result = result + ((result * adapt) /100) ;
     }
 
-    return console.log(result);
+    return alert(result);
 }
 
 priceCalculation(whichSite, desktopTemplates, adapt);
