@@ -24,7 +24,7 @@
                     <div class="col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">
                         <div class="menu">
                             <ul>
-                                <li><a class="activation" href="#main">Обо мне</a></li>
+                                <li><a href="#about">Обо мне</a></li>
                                 <li><a href="#knows">Услуги</a></li>
                                 <li><a href="#cases">Кейсы</a></li>
                                 <li><a href="#costs">Прайс</a></li>
@@ -55,15 +55,15 @@
         </nav>
     </header>
 
-    <section class="main" id="main">
+    <section class="main">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-lg-6 mt-5 pt-5">
                     <div class="title__container mt-5">
                         <h1>Привет <br> Я Андрей Браун</h1>
                         <h4>Фулл стек веб-разработчик</h4>
-                        <input type="button" value="Обо мне">
-                        <input type="button" value="Мои работы">
+                        <input type="button" src="#about" value="Обо мне">
+                        <input type="button" src="#cases" value="Мои работы">
                     </div>
                 </div>
             </div>
@@ -319,10 +319,10 @@
             <h4>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h4>
             <form class="form">
                 <p>
-                    <input placeholder="Имя" name="user">
-                    <input placeholder="Email" name="email">
+                    <input placeholder="Имя" type="text" name="user_name" class="form-control" id="user_name" required>
+                    <input placeholder="E-mail" type="email" name="user_email" class="form-control" id="user_email" required>
                 </p>
-                <p><textarea placeholder="СООБЩЕНИЕ" name="user"></textarea></p>
+                <p><textarea class="form-control" name="user_message" id="user_message" placeholder="Сообщение" required></textarea></p>
                 <input class="send" type="submit" value="Отправить" formaction="" formmethod="post">
             </form>
         </div>
@@ -348,25 +348,25 @@
               <h5 class="modal-title" id="exampleModalLabel">ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+
             <div class="modal-body">
-              <form>
+              <form action="php/mail.php" method="post">
                 <div class="mb-3">
                   <label for="recipient-name" class="col-form-label">Имя:</label>
-                  <input type="text" class="form-control" id="recipient-name">
+                  <input type="text" name="user_name" class="form-control" id="user_name" required>
                 </div>
+
                 <div class="mb-3">
                     <label for="recipient-name" class="col-form-label">E-mail:</label>
-                    <input type="email" class="form-control" id="recipient-name">
+                    <input type="email" name="user_email" class="form-control" id="user_email" required>
                 </div>
+
                 <div class="mb-3">
                   <label for="message-text" class="col-form-label">Сообщение:</label>
-                  <textarea class="form-control" id="message-text"></textarea>
+                  <textarea class="form-control" name="user_message" id="user_message" required></textarea>
                 </div>
+                <button type="submit" class="btn btn-primary">Отправить</button>
               </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
-              <button type="button" class="btn btn-primary">Отправить</button>
             </div>
           </div>
         </div>

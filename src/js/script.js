@@ -58,7 +58,7 @@ $(document).ready(() => {
     $(window).scroll(() => {
         let scrollDistance = $(window).scrollTop();
         var scroll = $(window).scrollTop() + $(window).height();
-        var offset = $statistics.offset().top + 60;
+        var offset = $statistics.offset().top;
         var offsetFooter = $footer.offset().top + 60;
  
         if (scroll > offset && counter == 0) {
@@ -88,6 +88,22 @@ $(document).ready(() => {
 
     $('.popup-link').magnificPopup({
         type: 'image'
+    });
+
+    $('form').submit((e) => {
+        e.preventDefault();
+
+        $.ajax({
+            type: "POST",
+            url: "php/mail.php",
+            data: $(this).serialize()
+        }).done(() => {
+            $(this).find("input").val("");
+            alert("Успешно отправлено!");
+            $("form").trigger("reset");
+            modal.hide();
+        });
+        return false;
     });
 })
 
