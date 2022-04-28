@@ -9,25 +9,43 @@ body{
 input {
     height: 40px;
     text-align: center;
-    border: 2px solid #79818c;
+    border: 2px solid #1E1F26;
     background: none;
     border-radius: 5px;
-    color: #79818c;
+    color: #283655;
     font-size: 13px;
     padding: 0px 15px;
     margin: 58px 14px 0px 14px;
 }
 
+.live{
+    display: inline-block;
+    border: 2px solid #1E1F26;
+    border-radius: 5px;
+    color: #283655;
+    padding: 10px 15px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.live:hover{
+    background:#1E1F26;
+    color: #fff;
+}
+.live:active{
+    transform: scale(1.1);
+}
+
 nav{
     width: 100%;
     height: 60px;
-    background-color: #344051;
+    background-color: #1E1F26;
     position: fixed; 
     z-index: 1000;
 }
 
 .activation {
-    color: #d17700!important;
+    color: #4D648D!important;
 }
 
 h4 {
@@ -39,7 +57,6 @@ h4 {
     font-size: 18px;
     line-height: 60px;
     float: left;
-    animation: comming 2.8s ease;
 }
 
 .menu{
@@ -49,12 +66,9 @@ h4 {
 .menu li{
     float: left;
     line-height: 60px;
-    color: #fff;
     margin-right: 40px;
     font-size: 14px;
     text-transform: uppercase;
-    animation: topshift 0.2s ease forwards;
-    opacity: 0;
 }
 
 .menu li a{
@@ -70,43 +84,11 @@ h4 {
 }
 
 .menu li a:hover{
-    color: #d17700;
+    color: #4D648D;
 }
 
 .menu li a:active{
     transform: scale(1.1);
-}
-
-.menu li:nth-child(2) {
-    animation-delay: 0.4s;
-}
-
-.menu li:nth-child(3) {
-    animation-delay: 0.6s;
-}
-
-.menu li:nth-child(4) {
-    animation-delay: 0.8s;
-}
-
-.menu li:nth-child(5) {
-    animation-delay: 1.0s;
-}
-
-.menu li:nth-child(6) {
-    animation-delay: 1.2s;
-}
-
-.menu li:nth-child(7) {
-    animation-delay: 1.4s;
-}
-
-.menu li:nth-child(8) {
-    animation-delay: 1.6s;
-}
-
-.menu li:nth-child(9) {
-    animation-delay: 1.8s;
 }
 
 main{
@@ -122,11 +104,9 @@ main{
 
 .title__container{
     float: left;
-    color: #2c384a;
+    color: #283655;
     text-align: center;
     width: 100%;
-    animation: titlemove 1s ease forwards;
-    animation-delay: 2.4ms;
 }
 
 .title__container h1{
@@ -138,7 +118,7 @@ main{
 .title__container h4{
     margin-top: 40px;
     font-size: 22px;
-    color: #79818c;
+    color: #4D648D;
 }
 
 .title__container input, .about input{
@@ -147,7 +127,7 @@ main{
 }
 
 .title__container input:hover, .about input:hover, .contacts .form .send input:hover{
-    background: #344051;
+    background: #1E1F26;
     color: #fff;
 }
 
@@ -174,7 +154,7 @@ h3::after {
     padding-top: 30px; 
     margin-left: auto;
     margin-right: auto;
-    border-bottom: 3px solid #d17700;
+    border-bottom: 3px solid #283655;
 }
 
 .about{
@@ -233,7 +213,7 @@ h3::after {
 }
 
 .knows ul li .title{
-    color: #cf7600;
+    color: #4D648D;
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -263,14 +243,6 @@ h3::after {
     margin-top: 5px;
 }
 
-.cases .items .item_description .live{
-    margin: 0;  
-    margin-top: 22px;
-    background: #63b5ae;
-    border: none;
-    color:#fff;
-}
-
 .cases .items span {
     display: block;
     font-weight: normal;
@@ -281,19 +253,6 @@ h3::after {
     text-align: left;
     padding-left: 85px;
     font-weight: bold;
-}
-
-.cases .items input{
-    margin: 0;
-    margin-top: 20px;
-}
-
-.cases .items input:hover{
-    background:#d17700;
-}
-
-.cases .items input:active{
-    transform: scale(1.1);
 }
 
 .costs {
@@ -316,13 +275,13 @@ h3::after {
     padding: 15px;
     background: #eeeeee;
     width: 100%;
-    color: #737373;
+    color: #283655;
     margin-bottom: 45px;
     border-radius: 5px;
 }
 
 .costs form .form__item select:hover{
-    background:#d17700;
+    background:#1E1F26;
     color: #fff;
 }
 
@@ -452,15 +411,25 @@ h3::after {
     margin: auto;
     margin-bottom: 10px;
 }
+
+.contacts ul li a {
+    color: #fff;    
+    text-decoration: none;
+}
+
+.contacts ul li a:hover{
+    text-decoration: underline;
+}
+
 .contacts ul li.first .img{
-    background: url(../img/9.png) no-repeat;
+    background: url(../img/9.png) no-repeat center;
 }
 
 .contacts ul li.second .img{
-    background: url(../img/10.png) no-repeat;
+    background: url(../img/10.png) no-repeat center;
 }
 .contacts ul li.third .img{
-    background: url(../img/11.png) no-repeat;
+    background: url(../img/11.png) no-repeat center;
 }
 
 .contacts .form {
@@ -520,7 +489,7 @@ h3::after {
 
 footer{
     height: 95px;
-    background-color: #354051;
+    background-color: #1E1F26;
 }
 
 footer h5{
@@ -528,40 +497,6 @@ footer h5{
     color: #fff;
     text-align: center;
     line-height: 95px;
-}
-
-@keyframes comming {
-    from{
-        opacity: 0;
-    }
-
-    to{
-        opacity: 1;
-    }
-}
-
-@keyframes topshift {
-    from{
-        opacity: 0;
-        margin-top: -80px;
-    }
-
-    to{
-        opacity: 1;
-        margin-top: 0px;
-    }
-}
-
-@keyframes titlemove {
-    from{
-        opacity: 0;
-        margin-left: -500px; 
-    }
-
-    to{
-        opacity: 1;
-        margin-top: 0px;
-    }
 }
 
 .white-btn{
@@ -637,6 +572,10 @@ footer h5{
     .cases .items .item__projectname {
         padding-left: 0px;
     }
+}
+
+.carousel-control-prev, .carousel-control-next{
+    width: 2%;
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon{

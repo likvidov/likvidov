@@ -1,3 +1,5 @@
+new WOW().init();
+
 const DATA = {
     price: [4000, 8000, 26000],
     desktopTemplates: [50, 40, 30],
